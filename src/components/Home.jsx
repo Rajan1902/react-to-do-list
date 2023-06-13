@@ -1,5 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import Task from './Task.jsx';
+
 function Home() {
     const initialArray = localStorage.getItem("tasks")?JSON.parse(localStorage.getItem("tasks")):[];
     const [tasks, setTasks] = useState(initialArray);
@@ -23,9 +24,8 @@ function Home() {
   }, [tasks])
   return (
     <>
-    <nav>Now you don't have to remember your tasks, all you have to do is finish them!</nav>
     <div className='container'>
-        <h1>Your goals</h1>
+        <h1>Add Tasks</h1>
         <form onSubmit={submitHandler}>
             <input type="text" placeholder='Title' value={title} onChange={(e)=>
                 setTitle(e.target.value)
