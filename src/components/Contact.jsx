@@ -2,7 +2,9 @@ import React from 'react'
 
 function Contact() {
   return (
-    <div>Contact</div>
+    <div>
+      <a href="https://rajan-per-folio.netlify.app" target='__blank'>Go to developer's portfolio</a>
+    </div>
   )
 }
 
